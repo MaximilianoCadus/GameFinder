@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo';
 }
 
 body{
     color: white;
+    font-family: 'Exo'
 }
 
 /* BACKGROUND */
@@ -40,7 +40,7 @@ body{
 .home-login_box{
     position: relative;
     width: 350px;
-    height: 500px;
+    height: 550px;
     border-radius: 12px;
     float: right;
     background: black;
@@ -82,24 +82,26 @@ body{
     text-align: center;
 }
 
-/* Log in main inputs */
-.home-login_box_main input{
+/* Email / Password input */
+.data{
     width: 280px;
     height: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-/* Email / Password input */
-.data{
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     border-radius: 4px;
+    outline: none;
+    padding-left: 15px;
 }
 
 /* Log in button */
 .submit{
+    width: 280px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: #4CC986;
     color: white;
     border-radius: 6px;
@@ -107,10 +109,131 @@ body{
     font-size: 16px;
     line-height: 24px;
     border-radius: 6px;
+    cursor: pointer
 }
 
-/* Input placeholders */
-::placeholder{
-    padding-left: 15px;
+
+/* Password options */
+.password-option{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+/* Remember me */
+.rememberMe{
+    float: left;
+    height: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.password-option label{
+    float: left;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/* Forgot password */
+.password-option_forgot{
+    float: right;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #5FE19B;
+    text-decoration: none;
+}
+
+/* Register container */
+.register-container{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.register-container p{
+    float: left;
+    padding-left: 20px;
+}
+
+.register{
+    align-items: right;
+    color: #5FE19B;
+    text-decoration: none;
+    margin-left: -5px;
+}
+
+/* Or container */
+.or-container{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.or{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: gray;
+}
+
+/* SOCIAL MEDIA */
+.login-social{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.facebook{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+
+.twitter{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+
+.google{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+
+.social-logo{
+    float: left;
+    height: 18px;
+    width: 18px;
+    margin-left: 30px;
+    margin-right: -15px;
+    margin-top: 2px;
 }
 
