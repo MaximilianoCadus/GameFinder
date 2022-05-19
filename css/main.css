@@ -11,6 +11,7 @@ body{
     color: white;
 }
 
+/* BACKGROUND */
 .home{
     height: 100%;
     width: 100%;
@@ -20,6 +21,7 @@ body{
     background-size: cover;
 }
 
+/* GameFinder HEADER LOGO */
 .home-header_logo{
     margin-top: 35px;
     margin-left: 25px;
@@ -27,12 +29,14 @@ body{
     height: 37.46px;
 }
 
+/* LOG IN SECTION */
 .home-login{
     width: 100%;
     overflow: hidden;
     align-items: center;
 }
 
+/* LOG IN BOX */
 .home-login_box{
     position: relative;
     width: 350px;
@@ -47,6 +51,7 @@ body{
     background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
 }
 
+/* LOG IN HEADER */
 .home-login_box_header{
     margin-top: 20px;
     margin-left: 50px;
@@ -54,12 +59,14 @@ body{
     text-align: center;
 }
 
+/* Log in title */
 .home-login_box_header_title{
     font-weight: 700;
     font-size: 16px;
     line-height: 27px;
 }
 
+/* Log in subtitle */
 .home-login_box_header_subtitle{
     margin-top: 8px;
     margin-bottom: 15px;
@@ -70,10 +77,12 @@ body{
     align-items: center;
 }
 
+/* LOG IN MAIN */
 .home-login_box_main{
     text-align: center;
 }
 
+/* Log in main inputs */
 .home-login_box_main input{
     width: 280px;
     height: 40px;
@@ -81,6 +90,7 @@ body{
     margin-bottom: 5px;
 }
 
+/* Email / Password input */
 .data{
     font-weight: 400;
     font-size: 14px;
@@ -88,6 +98,7 @@ body{
     border-radius: 4px;
 }
 
+/* Log in button */
 .submit{
     background-color: #4CC986;
     color: white;
@@ -98,6 +109,7 @@ body{
     border-radius: 6px;
 }
 
+/* Input placeholders */
 ::placeholder{
     padding-left: 15px;
 }
