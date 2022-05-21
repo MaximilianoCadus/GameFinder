@@ -15,16 +15,17 @@ body{
 .home{
     height: 100%;
     width: 100%;
+    left: 0px;
+    top: 0px;
     background-image: url(../img/HomeBG.png);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* GameFinder HEADER LOGO */
 .home-header_logo{
-    margin-top: 35px;
-    margin-left: 25px;
+    margin-top: 44.27px;
+    margin-left: 53.23px;
     width: 293.54px;
     height: 37.46px;
 }
@@ -39,42 +40,43 @@ body{
 /* LOG IN BOX */
 .home-login_box{
     position: relative;
-    width: 350px;
-    height: 550px;
+    width: 462px;
+    height: 702px;
     border-radius: 12px;
     float: right;
-    background: black;
     background-blend-mode: overlay;
     backdrop-filter: blur(10px);
-    margin-right: 200px;
-    margin-top: 50px;
+    margin-right: 100px;
+    margin-top: 130px;
     background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
 }
 
 /* LOG IN HEADER */
 .home-login_box_header{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 50px;
     margin-right: 50px;
-    text-align: center;
 }
 
 /* Log in title */
 .home-login_box_header_title{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 27px;
+    height: 27px;
+    text-align: center;
 }
 
 /* Log in subtitle */
 .home-login_box_header_subtitle{
-    margin-top: 8px;
-    margin-bottom: 15px;
+    width: 362px;
+    height: 28px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 21px;
-    display: flex;
-    align-items: center;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
 }
 
 /* LOG IN MAIN */
@@ -84,12 +86,11 @@ body{
 
 /* Email / Password input */
 .data{
-    width: 280px;
-    height: 40px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    width: 362px;
+    height: 47px;
+    margin-bottom: 16px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     border-radius: 4px;
     outline: none;
@@ -98,15 +99,17 @@ body{
 
 /* Log in button */
 .submit{
-    width: 280px;
-    height: 40px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 362px;
+    height: 47px;
+    margin-top: 24px;
     background-color: #4CC986;
     color: white;
     border-radius: 6px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     border-radius: 6px;
     cursor: pointer
@@ -115,22 +118,22 @@ body{
 
 /* Password options */
 .password-option{
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 /* Remember me */
 .rememberMe{
     float: left;
-    height: 19px;
+    height: 20px;
+    width: 20px;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .password-option label{
     float: left;
-    margin-left: 12px;
+    margin-left: 16px;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -153,10 +156,9 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 32px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 .register-container p{
@@ -173,8 +175,8 @@ body{
 
 /* Or container */
 .or-container{
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 24px;
+    margin-bottom: 40px;
 }
 
 .or{
@@ -198,8 +200,7 @@ body{
 }
 
 .facebook{
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-left: 40px;
     margin-right: 40px;
     padding-top: 8px;
@@ -210,8 +211,7 @@ body{
 }
 
 .twitter{
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-left: 40px;
     margin-right: 40px;
     padding-top: 8px;
@@ -222,8 +222,6 @@ body{
 }
 
 .google{
-    margin-top: 10px;
-    margin-bottom: 15px;
     margin-left: 40px;
     margin-right: 40px;
     padding-top: 8px;
