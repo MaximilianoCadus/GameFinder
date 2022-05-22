@@ -115,6 +115,38 @@ body{
     cursor: pointer
 }
 
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: solid 1.5px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+input[type="checkbox"]::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    font-size: 14px;
+    color: white;
+    display: none;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #4CC986;
+}
+
+input[type="checkbox"]:checked::after{
+    display: block;
+}
+
 
 /* Password options */
 .password-option{
@@ -177,6 +209,25 @@ body{
 .or-container{
     margin-top: 24px;
     margin-bottom: 40px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.or-container hr{
+    height: 2.07px;
+    background: grey;
+    width: 144.44px;
+}
+
+.line1{
+    float: left;
+    margin-right: 30px;
+}
+
+.line2{
+    float: right;
+    margin-left: 30px;
 }
 
 .or{
