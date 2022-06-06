@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --black-opacity: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+    --green-gradient: linear-gradient(180deg, #5FE19B 0%, #36B972 50%, #0EA152 100%);
+    --green: #4CC986;
+    --green2: #5FE19B;
+    --gray: #a5a5a5;
+}
 
 *{
     margin: 0;
@@ -8,7 +17,7 @@
 }
 
 body{
-    color: white;
+    color: var(--white);
     font-family: 'Exo'
 }
 
@@ -16,14 +25,14 @@ body{
 .home{
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: var(--black);
 }
 
 /* HEADER */
 .home-header{
-    height: 70px;
+    height: 94px;
     width: 100%;
-    background: linear-gradient(180deg, #5FE19B 0%, #36B972 50%, #0EA152 100%);
+    background: var(--green-gradient);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -31,11 +40,44 @@ body{
 
 /* GameFinder HEADER LOGO */
 .home-header_logo{
-    width: 293.54px;
-    height: 37.46px;
-    background: linear-gradient(180deg, #5FE19B 0%, #36B972 50%, #0EA152 100%);
-    margin-top: 15px;
-    margin-left: 15px;
+    width: 267.01px;
+    height: 33.05px;
+    margin-top: 28.97px;
+    margin-left: 39.95px;
 }
 
 /* Search */
+.search-container{
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    width: 362px;
+    height: 47px;
+    margin-top: 23px;
+    padding-left: 40px;
+}
+
+/* Profile options */
+.profile-options{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.profile-options a{
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 16px;
+}
+
+.avatar{
+    height: 48px;
+    width: 48px;
+    margin-right: 40px;
+}
