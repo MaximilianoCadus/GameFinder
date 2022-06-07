@@ -8,7 +8,6 @@
     --green: #4CC986;
     --green2: #5FE19B;
     --green3: #36B972;
-
     --gray: #a5a5a5;
     --gray2: #303030;
 }
@@ -21,7 +20,7 @@
 
 body{
     color: var(--white);
-    font-family: 'Exo'
+    font-family: 'Exo';
 }
 
 /* BACKGROUND */
@@ -181,12 +180,15 @@ body{
 }
 
 /* Games */
+.game-list{
+    margin-top: 31px;
+}
+
 .game{
     height: 314px;
     width: 363px;
     background: var(--gray2);
     border-radius: 12px;
-    margin-top: 31px;
     margin-bottom: 24px;
     margin-left: 24px;
     display: inline-block;
@@ -227,3 +229,29 @@ body{
     line-height: 24px;
 }
 
+.game-desc{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.game-desc img{
+    height: 20px;
+    width: 20px;
+}
+
+.info{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--gray);
+    margin-bottom: 4px;
+}
+
+.data{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 4px;
+}
