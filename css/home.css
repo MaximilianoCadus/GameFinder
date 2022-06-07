@@ -7,7 +7,10 @@
     --green-gradient: linear-gradient(180deg, #5FE19B 0%, #36B972 50%, #0EA152 100%);
     --green: #4CC986;
     --green2: #5FE19B;
+    --green3: #36B972;
+
     --gray: #a5a5a5;
+    --gray2: #303030;
 }
 
 *{
@@ -81,3 +84,146 @@ body{
     width: 48px;
     margin-right: 40px;
 }
+
+/* Title container */
+.title{
+    height: 65px;
+    width: 400px;
+    margin-top: 19px;
+    margin-left: 40px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 64px;
+}
+
+.subtitle{
+    height: 24px;
+    width: 347px;
+    margin-top: 2px;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+
+}
+
+/* Games */
+.games{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* Sidebar */
+.sidebar{
+    margin-top: 31px;
+    margin-left: 40px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+/* Game options */
+.games-options li{
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+/* Time options */
+.time-options{
+    margin-top: 37px;
+}
+
+.time-options li{
+    margin-bottom: 17px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.time-options a{
+    margin-left: 10.79px;
+}
+
+/* Trend options */
+.trend-options{
+    margin-top: 55px;
+}
+
+.popular{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 18px;
+}
+
+.trend-options li{
+    margin-bottom: 17px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.trend-options a{
+    margin-left: 10.79px;
+}
+
+/* Games */
+.game{
+    height: 314px;
+    width: 363px;
+    background: var(--gray2);
+    border-radius: 12px;
+    margin-top: 31px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    display: inline-block;
+}
+
+.game img{
+    height: 190.51px;
+    width: 363px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.top-desc{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.top-desc h1{
+    margin-left: 16px;
+    margin-top: 4.49px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    width: 293px;
+    height: 33px;
+}
+
+.top-desc p{
+    display: flex;
+    justify-content: end;
+    color: var(--green3);
+    margin-top: 11.49px;
+    margin-right: 16px;
+    width: 40px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
