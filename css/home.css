@@ -182,6 +182,8 @@ body{
 /* Games */
 .game-list{
     margin-top: 31px;
+    overflow: scroll;
+    height: 789px;
 }
 
 .game{
