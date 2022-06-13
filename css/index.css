@@ -6,6 +6,7 @@
     --green: #4CC986;
     --green2: #5FE19B;
     --gray: #a5a5a5;
+    --gray2: #515151;
 }
 
 *{
@@ -21,16 +22,105 @@ body{
 
 /* BACKGROUND */
 .home{
-    height: 100%;
-    width: 100%;
+    width: 1440px;
+    height: 1024px;
     left: 0px;
     top: 0px;
-    background-image: url(../img/HomeBG.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-/* GameFinder HEADER LOGO */
+.carousel{
+    width: 1440px;
+    height: 1024px;
+}
+
+.carousel-img{
+    width: 1440px;
+    height: 1024px;
+}
+
+.carousel-track_container{
+    width: 1440px;
+    height: 1024px;
+}
+
+.carousel-track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    transition: transform 250ms ease-in;
+    position: fixed;
+}
+
+.carousel-slide{
+    position: absolute;
+}
+
+.carousel-button_left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    left: 17.33px;
+}
+
+.carousel-button_left img{
+    width: 43px;
+    height: 43px;
+}
+
+.carousel-button_right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    right: 17.33px;
+}
+
+.carousel-button_right img{
+    width: 43px;
+    height: 43px;
+}
+
+.carousel-nav{
+    transform: translateY(-60px);
+    left: 46%;
+    position: fixed;
+    background-color: var(--gray2);
+    border-radius: 18px;
+    width: 120px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+}
+.carousel-indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: auto;
+    cursor: pointer;
+}
+
+.carousel-indicator.current-slide{
+    background: var(--white);
+}
+
+.hidden{
+    display: none;
+}
+
+/* GameFinder HEADER */
+.home-header{
+    position: absolute;
+    z-index: 1;
+}
+
 .home-header_logo{
     margin-top: 44.27px;
     margin-left: 53.23px;
@@ -40,9 +130,10 @@ body{
 
 /* LOG IN SECTION */
 .home-login{
-    width: 100%;
-    overflow: hidden;
-    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 1238px;
+    transform: translateX(101px);
 }
 
 /* LOG IN BOX */
@@ -54,8 +145,7 @@ body{
     float: right;
     background-blend-mode: overlay;
     backdrop-filter: blur(10px);
-    margin-right: 100px;
-    margin-top: 130px;
+    margin-top: 178px;
     background: var(--black-opacity);
 }
 
