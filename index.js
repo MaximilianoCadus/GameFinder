@@ -1,3 +1,75 @@
+// JSON server auth
+
+const form = document.getElementById('form');
+
+function login(mail , pass){
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+        email: mail,
+        password: pass,
+    });
+
+    var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+    };
+
+    fetch('http://localhost:3000/login', requestOptions)
+        .then((res) => res.json())
+        .then((result) => {
+            console.log(result);
+            if (result.hasOwnProperty('accessToken')){
+                location.href = '/home.html'
+            }
+        })
+        .catch((error) => console.log(error));
+};
+
+
+
+
+
+form.addEventListener('submit', function (e){
+    e.preventDefault();
+
+    const inputEmail = document.querySelector('.email').value;
+    const inputPass = document.querySelector('.pass').value;
+
+    login(inputEmail , inputPass);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Carousel
 const track = document.querySelector(".carousel-track");
 const slides = Array.from(track.children);

@@ -182,8 +182,12 @@ body{
 /* Games */
 .game-list{
     margin-top: 31px;
-    overflow: scroll;
+    overflow-y: scroll;
     height: 789px;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 .game{
@@ -194,6 +198,8 @@ body{
     margin-bottom: 24px;
     margin-left: 24px;
     display: inline-block;
+    cursor: pointer;
+    overflow-y: scroll;
 }
 
 .game img{
@@ -206,16 +212,17 @@ body{
 .top-desc{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    margin-top: 4.49px;
 }
 
-.top-desc h1{
+.top-desc h4{
     margin-left: 16px;
-    margin-top: 4.49px;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     width: 293px;
     height: 33px;
+    overflow-y: scroll;
 }
 
 .top-desc p{
@@ -233,14 +240,21 @@ body{
 
 .game-desc{
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 2.3fr 1fr;
     margin-left: 16px;
     margin-top: 16px;
 }
 
-.game-desc img{
+.desc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.plat img{
     height: 20px;
     width: 20px;
+    border-radius: 0;
+    margin-right: 10px;
 }
 
 .info{
