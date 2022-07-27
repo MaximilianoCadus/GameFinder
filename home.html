@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,62 +9,89 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="img/Icon.png" type="image/x-icon">
 </head>
+
 <body class="home">
 
 <!-- HEADER -->
-    <header class="home-header">
-        <!-- Logo -->
-        <div class="home-header_logo">
-            <img src="img/GAMEFINDER.png" alt="GameFinder" width="293.54" height="37.46">
-        </div>
-        <!-- Search -->
-        <div class="search-container">
-            <input class="search" type="search" placeholder="Search games...">
-        </div>
-        <div class="profile-options">
-            <a href="/index.html">Log out</a>
-            <img class="avatar" src="/img/Avatar.png" alt="Avatar">
-        </div>
-    </header>
+<header class="home-header">
+    <!-- Logo -->
+    <div class="home-header_logo">
+        <img src="img/GAMEFINDER.png" alt="GameFinder" width="293.54" height="37.46">
+    </div>
+    <!-- Search -->
+    <div class="search-container">
+        <input class="search" type="search" placeholder="Search games...">
+    </div>
+    <!-- Profile -->
+    <div class="profile-options">
+        <a href="/index.html">Log out</a>
+        <img class="avatar" src="/img/Avatar.png" alt="Avatar">
+    </div>
+</header>
 
-<!-- TITLE -->
-    <section class="title-container">
+<!-- SUBHEADER -->
+<section class="subheader">
+    <div class="title-container">
         <div class="title">
             <h1>New and trending</h1>
         </div>
         <div class="subtitle">
             <h2>Based on player counts and release date</h2>
         </div>
-    </section>
+    </div>
+    <div class="visual-options">
+        <div class="visual-mode">
+            <p>Dark mode</p>
+            <button class="toggle">
+                <img class="toggle-img" src="/img/Dark mode on.png" alt="switch dark mode">
+            </button>
+        </div>
+        <div class="cards-mode">
+            <button>
+                <img class="card" src="/img/1Card disable.png" alt="1 card disable">
+            </button>
+            <button>
+                <img class="cards" src="/img/3Cards active.png" alt="3 cards active">
+            </button>
+        </div>
+    </div>
+</section>
 
 <!-- GAMES -->
-    <section class="games">
-        <div class="sidebar">
-            <div class="games-options">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Reviews</a></li>
-                    <li><a href="">New releases</a></li>
-                </ul>
-            </div>
-            <div class="time-options">
-                <ul>
-                    <li><img src="/img/Star.svg" alt="star"><a href="">This week</a></li>
-                    <li><img src="/img/Calendar.svg" alt="calendar"><a href="">This month</a></li>
-                    <li><img src="/img/Clock.svg" alt="clock"><a href="">Coming soon</a></li>
-                </ul>
-            </div>
-            <div class="trend-options">
-                <ul>
-                    <li class="popular">Popular</li>
-                    <li><img src="/img/Search.svg" alt="calendar"><a href="">Last searches</a></li>
-                    <li><img src="/img/Like.svg" alt="clock"><a href="">Best of the year</a></li>
-                </ul>
-            </div>
+<section class="games">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Games options -->
+        <div class="games-options">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="">New releases</a></li>
+            </ul>
         </div>
-        <div  id="game-list" class="game-list">
+        <!-- Time options -->
+        <div class="time-options">
+            <ul>
+                <li><img src="/img/Star.svg" alt="star"><a href="">This week</a></li>
+                <li><img src="/img/Calendar.svg" alt="calendar"><a href="">This month</a></li>
+                <li><img src="/img/Clock.svg" alt="clock"><a href="">Coming soon</a></li>
+            </ul>
         </div>
-    </section>
-    <script src="/home.js"></script>
+        <!-- Trend options -->
+        <div class="trend-options">
+            <ul>
+                <li class="popular">Popular</li>
+                <li><img src="/img/Search.svg" alt="calendar"><a href="">Last searches</a></li>
+                <li><img src="/img/Like.svg" alt="clock"><a href="">Best of the year</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Gamelist -->
+    <div id="game-list" class="game-list">
+    </div>
+</section>
+
+<script src="/home.js"></script>
 </body>
+
 </html>

@@ -1,15 +1,26 @@
+/* FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* VAR */
 :root{
-    --white: #ffffff;
-    --black: #000000;
+    --snow: #ffffff;
+    --mink: #f0f0f0;
+    --shadow: #141414;
+    --ashtray: #515151;
     --black-opacity: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
     --green-gradient: linear-gradient(180deg, #5FE19B 0%, #36B972 50%, #0EA152 100%);
     --green: #4CC986;
-    --green2: #5FE19B;
-    --green3: #36B972;
+    --mintCondition: #5FE19B;
+    --soJaded: #36B972;
     --gray: #a5a5a5;
-    --gray2: #303030;
+    --charcoal: #303030;
+}
+
+.lightMode{
+    --snow: #515151;
+    --shadow: #f0f0f0;
+    --charcoal: #ffffff;
 }
 
 *{
@@ -19,7 +30,7 @@
 }
 
 body{
-    color: var(--white);
+    color: var(--snow);
     font-family: 'Exo';
 }
 
@@ -27,7 +38,7 @@ body{
 .home{
     height: 100%;
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--shadow);
 }
 
 /* HEADER */
@@ -40,7 +51,7 @@ body{
 }
 
 
-/* GameFinder HEADER LOGO */
+/* GameFinder logo */
 .home-header_logo{
     width: 267.01px;
     height: 33.05px;
@@ -61,7 +72,7 @@ body{
     padding-left: 40px;
 }
 
-/* Profile options */
+/* Profile */
 .profile-options{
     display: flex;
     justify-content: end;
@@ -70,7 +81,7 @@ body{
 
 .profile-options a{
     text-decoration: none;
-    color: var(--white);
+    color: #ffffff;
     cursor: pointer;
     font-weight: 400;
     font-size: 15px;
@@ -84,7 +95,13 @@ body{
     margin-right: 40px;
 }
 
-/* Title container */
+/* SUBHEADER */
+.subheader{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Title */
 .title{
     height: 65px;
     width: 400px;
@@ -106,7 +123,62 @@ body{
 
 }
 
-/* Games */
+/* Visual options */
+.visual-options{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: end;
+    margin-top: 27px;
+}
+
+.visual-options button{
+    border: none;
+}
+
+.visual-mode{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+}
+
+.visual-mode p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+}
+
+.visual-mode img{
+    width: 44px;
+    height: 22px;
+}
+
+.visual-mode button{
+    width: 44px;
+    height: 22px;
+    margin-left: 13px;
+    margin-right: 40px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.cards-mode img{
+    width: 40px;
+    height: 40px;
+}
+
+.cards-mode button{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    margin-left: -16px;
+    display: flex;
+    float: right;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* GAMES */
 .games{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -120,7 +192,7 @@ body{
 
 .sidebar a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--snow);
     cursor: pointer;
 }
 
@@ -179,7 +251,7 @@ body{
     margin-left: 10.79px;
 }
 
-/* Games */
+/* Game list */
 .game-list{
     margin-top: 31px;
     overflow-y: scroll;
@@ -190,10 +262,11 @@ body{
     display: none;
 }
 
+/* Game box */
 .game{
     height: 314px;
     width: 363px;
-    background: var(--gray2);
+    background: var(--charcoal);
     border-radius: 12px;
     margin-bottom: 24px;
     margin-left: 24px;
@@ -202,6 +275,19 @@ body{
     overflow-y: scroll;
 }
 
+.game1{
+    height: 538px;
+    width: 697px;
+    background: var(--charcoal);
+    border-radius: 12px;
+    margin-bottom: 24px;
+    margin-left: 250px;
+    display: inline-block;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+
+/* Game image */
 .game img{
     height: 190.51px;
     width: 363px;
@@ -209,9 +295,23 @@ body{
     border-top-right-radius: 12px;
 }
 
+.game1 img{
+    height: 315px;
+    width: 697px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Game top description */
 .top-desc{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    margin-top: 4.49px;
+}
+
+.top-desc1{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
     margin-top: 4.49px;
 }
 
@@ -225,10 +325,20 @@ body{
     overflow-y: scroll;
 }
 
+.top-desc1 h4{
+    margin-left: 16px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    width: 605px;
+    height: 33px;
+    overflow-y: scroll;
+}
+
 .top-desc p{
     display: flex;
     justify-content: end;
-    color: var(--green3);
+    color: var(--soJaded);
     margin-top: 11.49px;
     margin-right: 16px;
     width: 40px;
@@ -238,9 +348,30 @@ body{
     line-height: 24px;
 }
 
+.top-desc1 p{
+    display: flex;
+    justify-content: end;
+    color: var(--soJaded);
+    margin-top: 11.49px;
+    margin-right: 16px;
+    width: 40px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* Game down description */
 .game-desc{
     display: grid;
     grid-template-columns: 2.3fr 1fr;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.game-desc1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     margin-left: 16px;
     margin-top: 16px;
 }
@@ -250,6 +381,11 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
+.desc1{
+    display: inline-flex;
+}
+
+/* Platforms */
 .plat img{
     height: 20px;
     width: 20px;
@@ -257,6 +393,16 @@ body{
     margin-right: 10px;
 }
 
+.plat1 img{
+    height: 20px;
+    width: 20px;
+    border-radius: 0;
+    margin-right: 16px;
+    display: flex;
+    float: right;
+}
+
+/* Info */
 .info{
     font-weight: 500;
     font-size: 14px;
@@ -265,9 +411,40 @@ body{
     margin-bottom: 4px;
 }
 
+.info1{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--gray);
+    margin-bottom: 4px;
+    margin-right: 10px;
+}
+
 .data{
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 4px;
+}
+
+.data1{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 4px;
+    margin-right: 25px;
+}
+
+.description{
+    display: none;
+}
+
+.description1{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    height: 102px;
+    width: 665px;
+    margin-left: 16px;
+    margin-top: 19px;
 }
