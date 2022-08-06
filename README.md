@@ -1,7 +1,7 @@
 # GameFinder
 This repository is for the BFEDA project.
 
-Log in page:
+Log in page (first run the jsonserver):
 
-User: maxicadus@hotmail.com
+User: maxicadus@gmail.com
 Pass: maxicadus
