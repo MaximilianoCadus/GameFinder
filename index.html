@@ -16,7 +16,13 @@
 <!-- HEADER -->
 <header class="home-header">
     <div class="home-header_logo">
-        <img src="img/GAMEFINDER.png" alt="GameFinder" width="293.54" height="37.46">
+        <img class="logo" src="img/GAMEFINDER.png" alt="GameFinder" width="293.54" height="37.46">
+    </div>
+    <div class="visual-mode">
+        <p>Dark mode</p>
+        <button class="toggle">
+            <img class="toggle-img" src="/img/Dark mode on.png" alt="switch dark mode">
+        </button>
     </div>
 </header>
 
@@ -37,6 +43,7 @@
                 <!-- Pasword -->
                 <label for="password"></label>
                 <input class="login-data pass" name="password" type="password" placeholder="Password" required>
+                <span class="eye"><button class="passToggle"><img class="passToggle-img" src="/img/Eye.svg" alt=""></button></span>
                 <!-- Pasword options -->
                 <div class="password-option">
                     <!-- Remember me -->
@@ -61,16 +68,16 @@
             <!-- Social -->
             <div class="login-social">
                 <div class="social-container">
-                    <a href="https://www.facebook.com/"><img class="social-logo" src="/img/Facebook.svg" alt="facebook"></a>
-                    <a href="https://www.facebook.com/">Login with FaceBook</a>
+                    <a href="https://www.facebook.com/"><img class="social-logo fb-img" src="/img/Facebook.svg" alt="facebook"></a>
+                    <a class="social-name fb" href="https://www.facebook.com/">Login with Facebook</a>
                 </div>
                 <div class="social-container">
-                    <a href="https://twitter.com/i/flow/login"><img class="social-logo" src="/img/Twitter.svg" alt="twitter"></a>
-                    <a href="https://twitter.com/i/flow/login">Login with Twitter</a>
+                    <a href="https://twitter.com/i/flow/login"><img class="social-logo tw-img" src="/img/Twitter.svg" alt="twitter"></a>
+                    <a class="social-name tw" href="https://twitter.com/i/flow/login">Login with Twitter</a>
                 </div>
                 <div class="social-container">
-                    <a href="https://accounts.google.com/signin/v2/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img class="social-logo" src="/img/Google.svg" alt="google"></a>
-                    <a href="https://accounts.google.com/signin/v2/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Login with Google</a>
+                    <a href="https://accounts.google.com/signin/v2/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img class="social-logo go-img" src="/img/Google.svg" alt="google"></a>
+                    <a class="social-name go" href="https://accounts.google.com/signin/v2/identifier?hl=es&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Login with Google</a>
                 </div>
             </div>
         </div>
@@ -83,31 +90,31 @@
         <!-- Background images -->
         <ul class="carousel-track">
             <li class="carousel-slide current-slide">
-                <img class="carousel-img" src="/img/HomeBG.png" alt="background">
+                <img class="carousel-img bg" src="/img/HomeBG.png" alt="background">
             </li>
             <li class="carousel-slide">
-                <img class="carousel-img" src="/img/HomeBG1.jpg" alt="background">
+                <img class="carousel-img bg1" src="/img/HomeBG1.jpg" alt="background">
             </li>
             <li class="carousel-slide">
-                <img class="carousel-img" src="/img/HomeBG2.jpg" alt="background">
+                <img class="carousel-img bg2" src="/img/HomeBG2.jpg" alt="background">
             </li>
             <li class="carousel-slide">
-                <img class="carousel-img" src="/img/HomeBG3.jpg" alt="background">
+                <img class="carousel-img bg3" src="/img/HomeBG3.jpg" alt="background">
             </li>
             <li class="carousel-slide">
-                <img class="carousel-img" src="/img/HomeBG4.jpg" alt="background">
+                <img class="carousel-img bg4" src="/img/HomeBG4.jpg" alt="background">
             </li>
             <li class="carousel-slide">
-                <img class="carousel-img" src="/img/HomeBG5.jpg" alt="background">
+                <img class="carousel-img bg5" src="/img/HomeBG5.jpg" alt="background">
             </li>
         </ul>
     </div>
     <!-- Left / Right buttons -->
     <button class="carousel-button_left hidden">
-        <img src="/img/Carousel left.svg" alt="carousel button">
+        <img class="left" src="/img/Carousel left.svg" alt="carousel button">
     </button>
     <button class="carousel-button_right">
-        <img src="/img/Carousel right.svg" alt="carousel button">
+        <img class="right" src="/img/Carousel right.svg" alt="carousel button">
     </button>
     <!-- Carousel nav -->
     <div class="carousel-nav">
@@ -132,7 +139,9 @@
     </div>
 </div>
 
-<script src="/index.js"></script>
+<script src="/js/login/auth.js"></script>
+<script src="/js/login/carousel.js"></script>
+<script src="/js/login/lightmode.js"></script>
 </body>
 
 </html>

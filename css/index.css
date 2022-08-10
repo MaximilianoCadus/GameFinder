@@ -4,12 +4,24 @@
 
 /* VAR */
 :root{
-    --white: #ffffff;
+    --snow: #ffffff;
+    --mink: #f0f0f0;
+    --shadow: #141414;
+    --ashtray: #515151;
     --black-opacity: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+    --green-gradient: linear-gradient(180deg, #5FE19B 0%, #36B972 50%, #0EA152 100%);
     --green: #4CC986;
-    --green2: #5FE19B;
+    --mintCondition: #5FE19B;
+    --soJaded: #36B972;
     --gray: #a5a5a5;
-    --gray2: #515151;
+    --charcoal: #303030;
+}
+
+.lightMode{
+    --black-opacity: #f0f0f0;
+    --snow: #515151;
+    --ashtray: #E1E1E4;
+
 }
 
 *{
@@ -19,7 +31,7 @@
 }
 
 body{
-    color: var(--white);
+    color: var(--snow);
     font-family: 'Exo'
 }
 
@@ -99,12 +111,13 @@ body{
     transform: translateY(-60px);
     left: 46%;
     position: fixed;
-    background-color: var(--gray2);
+    background-color: var(--ashtray);
     border-radius: 18px;
     width: 120px;
     height: 27px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .carousel-indicator{
@@ -112,13 +125,14 @@ body{
     border-radius: 50%;
     width: 7px;
     height: 7px;
-    background: rgba(255, 255, 255, 0.25);
-    margin: auto;
+    background: var(--snow);
+    opacity: 25%;
     cursor: pointer;
 }
 
 .carousel-indicator.current-slide{
-    background: var(--white);
+    background: var(--snow);
+    opacity: 100%;
 }
 
 .hidden{
@@ -128,7 +142,15 @@ body{
 /* HEADER */
 .home-header{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 115px;
+}
+
+.home-headerlm{
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* GameFinder logo */
@@ -137,6 +159,34 @@ body{
     margin-left: 53.23px;
     width: 293.54px;
     height: 37.46px;
+}
+
+/* Dark mode switch */
+.visual-mode{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 100px;
+}
+
+.visual-mode p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.visual-mode img{
+    width: 44px;
+    height: 22px;
+}
+
+.visual-mode button{
+    border: none;
+    width: 44px;
+    height: 22px;
+    cursor: pointer;
+    background: transparent;
 }
 
 /* LOG IN SECTION */
@@ -204,6 +254,23 @@ body{
     border-radius: 4px;
     outline: none;
     padding-left: 15px;
+    border: none;
+}
+
+::placeholder {
+    color: #939393;
+    opacity: 1;
+  }
+
+.eye{
+    position: absolute;
+    right: 60px;
+    top: 215px;
+}
+
+.passToggle{
+    all: unset;
+    cursor: pointer;
 }
 
 /* Submit button */
@@ -215,19 +282,22 @@ body{
     height: 47px;
     margin-top: 24px;
     background-color: var(--green);
-    color: var(--white);
+    color: #ffffff;
     border-radius: 6px;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    cursor: pointer
+    cursor: pointer;
+    border: none;
 }
+
+
 
 input[type="checkbox"]{
     appearance: none;
     -webkit-appearance: none;
     background-color: transparent;
-    border: solid 1.5px var(--white);
+    border: solid 1.5px var(--snow);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,7 +309,7 @@ input[type="checkbox"]::after{
     font-weight: 600;
     content: "\f00c";
     font-size: 14px;
-    color: var(--white);
+    color: var(--snow);
     display: none;
 }
 
@@ -282,23 +352,21 @@ input[type="checkbox"]:checked::after{
 /* Forgot password */
 .password-option_forgot{
     float: right;
-    font-family: "Open Sans";
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    color: var(--green2);
+    color: var(--mintCondition);
     text-decoration: none;
 }
 
 /* Register container */
 .register-container{
-    font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     margin-top: 32px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
 .register-container p{
@@ -308,7 +376,7 @@ input[type="checkbox"]:checked::after{
 
 .register{
     align-items: right;
-    color: var(--green2);
+    color: var(--mintCondition);
     text-decoration: none;
     margin-left: -5px;
 }
@@ -318,6 +386,7 @@ input[type="checkbox"]:checked::after{
     margin-top: 24px;
     margin-bottom: 40px;
     display: flex;
+    align-items: center;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -339,7 +408,6 @@ input[type="checkbox"]:checked::after{
 }
 
 .or{
-    font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -353,9 +421,13 @@ input[type="checkbox"]:checked::after{
     line-height: 24px;
 }
 
-.login-social a{
+.social-name{
     text-decoration: none;
-    color: var(--white);
+    color: var(--snow);
+}
+
+.social-namelm{
+    color: #36B972;
 }
 
 .social-container{
@@ -365,8 +437,12 @@ input[type="checkbox"]:checked::after{
     padding-top: 8px;
     padding-bottom: 8px;
     padding-right: 10px;
-    border: solid 3px var(--white);
+    border: solid 3px var(--snow);
     border-radius: 5px;
+}
+
+.social-containerlm{
+    border: solid 3px #36B972;
 }
 
 .social-logo{
