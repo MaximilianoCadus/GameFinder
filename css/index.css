@@ -37,16 +37,16 @@ body{
 
 /* BACKGROUND */
 .home{
-    width: 1440px;
-    height: 1024px;
+    width: 100%;
+    height: 100%;
     left: 0px;
     top: 0px;
 }
 
 /* CAROUSEL */
 .carousel{
-    width: 1440px;
-    height: 1024px;
+    width: 100%;
+    height: 100%;
 }
 
 /* Background images */
