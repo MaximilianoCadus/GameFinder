@@ -162,22 +162,6 @@ body{
     background: transparent;
 }
 
-.cards-mode img{
-    width: 40px;
-    height: 40px;
-}
-
-.cards-mode button{
-    width: 40px;
-    height: 40px;
-    margin-right: 40px;
-    margin-left: -16px;
-    display: flex;
-    float: right;
-    cursor: pointer;
-    background: transparent;
-}
-
 /* GAMES */
 .games{
     display: grid;
