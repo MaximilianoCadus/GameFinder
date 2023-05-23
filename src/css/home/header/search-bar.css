@@ -1,0 +1,124 @@
+
+.dropdown-container {
+  flex-direction: column;
+  box-shadow: 0px 0px 4px rgba(140, 140, 140, 0.25);
+  border-radius: 4px;
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.dropdown {
+  background-color: var(--white);
+  box-shadow: 0px 0px 4px rgba(140, 140, 140, 0.25);
+  border-radius: 4px;
+  padding: 10px 8px 10px 14px;
+  max-height: 168px;
+  overflow: auto;
+}
+
+.dropdown-text, .dropdown-no-recent {
+  padding: 10px 0px 10px 0px;
+  list-style-type: none;
+  font-size: 0.938rem;
+  cursor:pointer;
+  color: var(--li-color);
+}
+
+.dropdown-text {
+  border-bottom:  0.5px solid var(--hr);
+}
+
+
+.dropdown-text:first-child {
+  padding-top: 0;
+}
+
+
+.dot-pulse {
+  position: absolute;
+  left: -9999px;
+  margin-left: 285px;
+  margin-top: 18px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--dot-pulse);
+  color: var(--dot-pulse);
+  box-shadow: 9999px 0 0 -5px var(--dot-pulse);
+  animation: dotPulse 1.5s infinite linear;
+  animation-delay: .25s;
+}
+
+.dot-pulse::before, .dot-pulse::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--dot-pulse);
+  color: var(--dot-pulse);
+}
+
+.dot-pulse::before {
+  box-shadow: 9984px 0 0 -5px var(--dot-pulse);
+  animation: dotPulseBefore 1.5s infinite linear;
+  animation-delay: 0s;
+}
+
+.dot-pulse::after {
+  box-shadow: 10014px 0 0 -5px var(--dot-pulse);
+  animation: dotPulseAfter 1.5s infinite linear;
+  animation-delay: .5s;
+}
+
+@keyframes dotPulseBefore {
+  0% {
+    box-shadow: 9984px 0 0 -5px var(--dot-pulse);
+  }
+  30% {
+    box-shadow: 9984px 0 0 2px var(--dot-pulse);
+  }
+  60%,
+  100% {
+    box-shadow: 9984px 0 0 -5px var(--dot-pulse);
+  }
+}
+
+@keyframes dotPulse {
+  0% {
+    box-shadow: 9999px 0 0 -5px var(--dot-pulse);
+  }
+  30% {
+    box-shadow: 9999px 0 0 2px var(--dot-pulse);
+  }
+  60%,
+  100% {
+    box-shadow: 9999px 0 0 -5px var(--dot-pulse);
+  }
+}
+
+@keyframes dotPulseAfter {
+  0% {
+    box-shadow: 10014px 0 0 -5px var(--green2);
+  }
+  30% {
+    box-shadow: 10014px 0 0 2px var(--green2);
+  }
+  60%,
+  100% {
+    box-shadow: 10014px 0 0 -5px var(--green2);
+  }
+}
+
+hr {
+  border-bottom: 0.5px solid var(--hr);
+  opacity: 20%;
+}
+
+hr:last-child {
+  display:none;
+}

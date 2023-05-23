@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+}
+
+.container-cards {
+  display: flex;
+  flex-flow: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+  padding-top: 31px;
+  margin-left: 211px;
+}
+
+.card-container {
+  position: relative;
+  width: 363px;
+  max-height: 314px;
+  background-color: var(--background-card);
+  box-shadow: 0px 0px 7px rgba(106, 106, 106, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.heart-icon {
+  position: absolute;
+  right: 0;
+  margin: 15px;
+  filter: drop-shadow(0px 0px 5px var(--black));
+}
+
+.card-image img {
+  width: 363px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 18px 16px;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 14px 0;
+  align-items: center;
+  font-weight: 700;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  color: var(--card-title-date-genre);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow:hidden;
+}
+
+.header-number {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--counter);
+}
+
+.info-top {
+  display: flex;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.info-release {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.release-date-txt {
+  font-weight: 500;
+  margin-right: 26px;
+  color: var(--release-genre);
+}
+
+.release-date {
+  font-weight: 400;
+  color: var(--card-title-date-genre);
+}
+
+.container-console-logos {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.logo-console {
+  margin-left: 16px;
+  height: 20px;
+}
+
+.logo-console-small img {
+  height: 16px;
+  width: 16px;
+}
+
+[data-theme="dark"] .logo-console {
+  filter: brightness(100);
+}
+
+[data-theme="dark"] .logo-console-small {
+  filter: brightness(100);
+}
+
+.xbox,
+.nintendo,
+.pc {
+  margin-left: 10px;
+}
+
+.info-bottom {
+  display: flex;
+}
+
+.genres-txt {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 19px;
+  color: var(--release-genre);
+  margin-right: 62px;
+}
+
+.genres {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 19px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--card-title-date-genre);
+}
+
+.card-container-sc {
+  width: 697px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: var(--background-card);
+  box-shadow: 0px 0px 7px rgba(106, 106, 106, 0.25);
+  margin-left: 240px;
+}
+
+.container-info-bottom-sc {
+  display: flex;
+}
+
+
+.heart-icon-sc {
+  position: absolute;
+  right: 0;
+  margin: 25px;
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+img.heart-icon-sc {
+  width: 27px;
+  height: 25px;
+}
+
+.info-header-sc {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.info-header-sc h2 {
+  font-size: 2rem;
+  color: var(--card-title-date-genre);
+  align-self: center;
+}
+
+.info-header-sc h3 {
+  font-size: 1.5rem;
+  color: var(--counter);
+  align-self: center;
+}
+
+.card-image-sc img {
+  border-radius: 12px 12px 0px 0px;
+  display: block;
+  width: 697px;
+  max-height: 298px;
+  height: 298px;
+  object-fit: cover;
+  cursor:pointer;
+}
+
+.card-info-sc {
+  padding: 16px 16px 10px 16px;
+}
+
+.info-top-sc {
+  margin-top: 14px;
+}
+
+.info-release-sc {
+  display: flex;
+  gap: 10px;
+  margin-right: 30px;
+}
+
+.read-more {
+  all: unset;
+  color: var(--counter);
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.game-description {
+  display: none;
+}
+
+.game-description-sc {
+  font-size: 0.875rem;
+}
+
+
+.game-description-sc p {
+  text-align:justify;
+  font-weight: 500;
+  color: var(--card-title-date-genre);
+}
+
+.single-game-info-sc {
+  display: flex;
+}
+
+.info-top-sc {
+  margin-bottom: 19px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.release-date-txt-sc {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--release-genre);
+  font-size: 0.875rem;
+}
+
+.release-date-sc {
+  font-weight: 400;
+  color: var(--card-title-date-genre);
+  font-size: 0.875rem;
+}
+
+.info-bottom-sc {
+  display: flex;
+  gap: 10px;
+}
+
+.genres-txt-sc {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 19px;
+  color: var(--release-genre);
+}
+
+.genres-sc {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 19px;
+  color: var(--card-title-date-genre);
+}
+
+.searches-not-found {
+  color: var(--not-found);
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-right: auto;
+}

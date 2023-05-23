@@ -1,0 +1,17 @@
+
+.div-header {
+  z-index: 1;
+  position: absolute;
+  height: 115px;
+  width: 100%;
+  background-color: var(--header-color);
+}
+.logo-header {
+  position: absolute;
+  left: 53px;
+  top: 44px;
+}
+
+[data-theme="dark"] .logo-header {
+  filter: brightness(0) invert(1);
+}

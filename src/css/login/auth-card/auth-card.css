@@ -1,0 +1,264 @@
+.auth-page-card {
+  z-index: 1;
+  position: absolute;
+  top: 178px;
+  right: 100px;
+  background: var(--auth-card);
+  border-radius: 12px;
+  padding: 40px 50px 40px 50px;
+  width: 462px;
+}
+
+.container-words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 8px;
+  margin-top:0;
+}
+
+.login {
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 32px;
+  color: var(--text-color);
+}
+
+.auth-page-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box-username,
+.input-box-password {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 3px;
+  top: 15px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.toggle-password-wrong {
+  position: absolute;
+  right: 3px;
+  top: 15px;
+  margin-right: 7px;
+  cursor: pointer;
+  filter: invert(49%) sepia(73%) saturate(1963%) hue-rotate(328deg)
+    brightness(114%) contrast(97%);
+}
+
+.input-email {
+  margin-bottom: 16px;
+}
+
+.input-email-error {
+  margin-bottom: 10px;
+}
+
+
+.invalid {
+  color:red;
+  margin-bottom: 9px;
+}
+
+.input-password {
+  margin-bottom: 13px;
+}
+
+.input {
+  width: 100%;
+  background-color: var(--white);
+  height: 47px;
+  border-style: none;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 0.938rem;
+}
+
+.input:focus, .input-wrong:focus {
+  outline: none;
+}
+
+.input-wrong {
+  width: 100%;
+  background-color: var(--white);
+  height: 47px;
+  border-color: var(--error);
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 0.938rem;
+}
+
+input[type="password"] {
+  color: var(--dark-grey);
+}
+
+.input-box-side {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.87rem;
+  margin-bottom: 24px;
+}
+
+.input-box-remember-me {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.label-remember-me {
+  font-size: 0.875rem;
+  color: var(--line-registration);
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  color: var(--checkbox-border);
+  border: 1.5px solid var(--checkbox-border);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked  {
+  appearance:none;
+  background-color: var(--secondary-green);
+  background-image: url("../../../assets/icon/tick.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.forgot-password {
+  color: var(--secondary-green);
+  font-size: 0.875rem;
+  font-weight: 600;
+  align-self: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  height: 47px;
+  font-size: 1.12rem;
+  font-weight: 700;
+  background-color: var(--login-button);
+  color: var(--white);
+  cursor: pointer;
+  border-style: none;
+  border-radius: 6px;
+  margin-bottom: 32px;
+}
+
+.login-button:hover {
+  background-color: #36B972;
+}
+
+.registration {
+  display: flex;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.registration-none {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-right: 5px;
+  color: var(--line-registration);
+}
+
+.registration-now {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--secondary-green);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.registration-now:hover {
+  text-decoration: underline;
+}
+
+.line {
+  display: flex;
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 19px;
+  text-align: center;
+  color: var(--line-registration);
+  align-self: center;
+  margin-bottom: 29.29px;
+  gap: 10px;
+}
+
+.line:before,
+.line:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid var(--line-registration);
+  margin: auto;
+}
+
+.line:before {
+  margin-right: 10px;
+}
+
+.line:after {
+  margin-left: 10px;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.social-button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  height: 47px;
+  font-size: 1.12rem;
+  border-radius: 6px;
+  border: 2px solid var(--primary-color);
+  gap: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-title,
+.social-button img {
+  align-self: center;
+}
+
+.social-title {
+  margin-left: 14px;
+}
+
+a img {
+  position: absolute;
+  left: 60px;
+}
+
+[data-theme="dark"] a img {
+  filter: brightness(100);
+}

@@ -1,0 +1,54 @@
+.container-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 19px;
+}
+
+.title h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--title-home);
+  margin: 0;
+}
+
+.title h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--title-home);
+  margin: 0;
+}
+
+.mode {
+  padding-top: 23px;
+  padding-right: 25px;
+}
+
+.thumbnail {
+  display: flex;
+  gap: 24px;
+  padding-top: 25px;
+  justify-content: flex-end;
+}
+
+.thumbnail img {
+  cursor: pointer;
+}
+
+.dark-mode {
+  display: flex;
+  gap: 13px;
+}
+
+.dark-title {
+  font-weight: 400;
+  font-size: 0.938rem;
+}
+
+[data-theme="dark"] .thumbnail {
+  filter: brightness(1) invert(1);
+}

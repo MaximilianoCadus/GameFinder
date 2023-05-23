@@ -1,0 +1,10 @@
+footer:after {
+    content: "";
+    position: fixed;
+    z-index: 1;
+    bottom: -5px;
+    left: 0;
+    background-image: linear-gradient(to bottom, var(--footer), var(--footer-gradient) 90%);
+    width: 100%;
+    height: 4em;
+  }

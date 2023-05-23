@@ -1,0 +1,114 @@
+.sidebar-home {
+  display: flex;
+  width: 223px;
+  height: 100%;
+  top: 235px;
+  position: absolute;
+}
+
+.sidebar-buttons-container {
+  display: flex;
+  flex-direction: column;
+  height: 129px;
+  margin-bottom: 27px;
+}
+
+.home-button {
+  font-weight: 700;
+  color: var(--home-button);
+}
+
+.home-button-not-selected {
+  font-weight: 700;
+  color: var(--a-color);
+  font-size: 1.25rem;
+}
+
+.review-button,
+.newreleases-button {
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.home-button,
+.review-button,
+.newreleases-button {
+  font-size: 1.25rem;
+}
+
+.dateoptions-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dateoptions-option {
+  display: flex;
+  margin-bottom: 17px;
+  align-items: center;
+}
+
+.dateoptions-title,
+.last-searches-title,
+.bestoftheyear-title {
+  font-size: 1.125rem;
+}
+
+.icon-sidebar {
+  margin-right: 11px;
+}
+
+.popular-title {
+  display: flex;
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-top: 38px;
+  margin-bottom: 18px;
+  cursor:pointer;
+}
+
+.lastsearches-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.lastsearches-container,
+.bestoftheyear-container,
+.dateoptions-container {
+  color: var(--a-color);
+}
+
+.sidebar-buttons-container,
+.popular-title {
+  color: var(--a-color);
+}
+
+.icon-lastsearches-sidebar {
+  margin-right: 11px;
+}
+
+.bestoftheyear-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.icon-bestoftheyear-sidebar {
+  margin-right: 11px;
+}
+
+.home-button,
+.home-button-not-selected,
+.review-button,
+.newreleases-button,
+.dateoptions-option,
+.last-searches-title,
+.bestoftheyear-title {
+  cursor: pointer;
+}
+
+.last-searches-active {
+  font-weight: bold;
+  color: var(--last-searches);
+  font-size: 1.125rem;
+}

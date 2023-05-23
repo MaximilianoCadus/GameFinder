@@ -1,0 +1,186 @@
+:root {
+  --green1: #5fe19b;
+  --green2: #36b972;
+  --green3: #0ea152;
+  --green4: #4cc986;
+}
+
+.header-home {
+  display: flex;
+  background-image: linear-gradient(
+    var(--green1),
+    var(--green2),
+    var(--green3)
+  );
+  height: 94px;
+  box-shadow: 1px -3px 36px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  align-self: center;
+  margin-left: 39px;
+  cursor: pointer;
+}
+
+.logo img {
+  filter: brightness(100);
+  width: 267px;
+  height: auto;
+}
+
+.search-bar {
+  display: block;
+  position: relative;
+  align-self: center;
+  margin-right: 120px;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+
+.search-bar img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 15px;
+  margin-left: 11px;
+}
+
+.search-games {
+  width: 362px;
+  height: 47px;
+  border-radius: 4px;
+  border-style: none;
+  padding-left: 41px;
+  outline: none;
+}
+
+img.close-icon {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.side {
+  display: flex;
+  gap: 16px;
+  margin-right: 40px;
+}
+
+.log-out {
+  background: none;
+  border: none;
+  color: var(--white);
+  align-self: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.avatar img {
+  height: 16px;
+}
+
+.avatar-user {
+  align-self: center;
+}
+
+.avatar-user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.initial {
+  display: none;
+}
+.overlay-logout {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.logout-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 386px;
+  min-height: 200px;
+  padding: 38px 22px 24px 22px;
+  border-radius: 12px;
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.logout-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.logout-text {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.logout-button {
+  align-self: center;
+  height: 47px;
+  width: 342px;
+  font-size: 1.12rem;
+  font-weight: 700;
+  background-color: var(--login-button);
+  color: var(--white);
+  cursor: pointer;
+  border-style: none;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.logout-cancel {
+  margin-top: 8px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--green);
+}
+
+@media (max-width: 420px) {
+
+  .logout-container {
+    width: 300px;
+  }
+
+  .logout-button {
+    width: 280px;
+  }
+
+}

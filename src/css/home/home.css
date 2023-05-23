@@ -1,0 +1,22 @@
+body {
+    background-color: var(--background-home);
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 34px;
+    height: 100vh;
+}
+
+.search-overlay {
+    background: #000000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+  

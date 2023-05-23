@@ -1,0 +1,46 @@
+.snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--grey);
+  color: var(--text-login);
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 20;
+  left: 50%;
+  bottom: 40px;
+  animation: fadein 0.6s, fadeout 0.6s 4.7s;
+}
+
+#show {
+  visibility: visible;
+  animation: fadein 0.6s, fadeout 0.6s 4.7s;
+}
+
+#hide {
+  visibility: hidden;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 40px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 40px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+     opacity: 0;
+  }
+}

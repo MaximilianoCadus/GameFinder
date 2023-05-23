@@ -1,0 +1,30 @@
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 45px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--carousel-buttons);
+  border: none;
+  height: 43px;
+  width: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-theme='dark'] .arrow img {
+  filter: brightness(0) invert(1);
+}
+
+.leftArrow {
+  left: 32px;
+  color: var(--dot-arrow);
+}
+
+.rightArrow {
+  right: 32px;
+  color: var(--dot-arrow);
+}

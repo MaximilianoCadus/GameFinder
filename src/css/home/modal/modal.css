@@ -1,0 +1,341 @@
+.modal-container,
+.modal-background {
+  border-radius: 24px;
+  position: fixed;
+  top: 111px;
+  z-index: 10;
+}
+
+.container-modal {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-container {
+  background: linear-gradient(
+    180deg,
+    var(--top-background-modal) 0%,
+    var(--bottom-background-modal) 63.23%,
+    var(--bottom-background-modal) 75.85%
+  );
+  display: flex;
+  height: 793px;
+  padding: 0 32px 36px 32px;
+  width: 1076px;
+}
+.modal-background {
+  max-height: 645px;
+  width: 1076px;
+}
+
+.cross-icon {
+  cursor: pointer;
+  display: block;
+  filter: drop-shadow(0px 0px 3px black);
+  margin: 34px;
+  position: absolute;
+  right: 0;
+}
+
+.icons-modal img {
+  height: 30px;
+}
+
+.icons-modal {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+}
+
+.icon {
+  filter: brightness(100);
+  height: 20px;
+  margin-right: 24px;
+}
+
+.modal-text {
+  align-self: end;
+  margin-right: 24px;
+}
+
+.title-modal h2 {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.extra-info-modal {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.extra-info-modal p:first-of-type {
+  background-color: var(--green2);
+  color: var(--white);
+}
+
+.extra-info-modal div:last-of-type {
+  width: 85px;
+}
+
+.extra-info-modal div,
+.extra-info-modal p {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 62px;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 28px;
+  justify-content: center;
+  width: 125px;
+}
+
+.links-modal {
+  display: flex;
+  gap: 24px;
+  margin-top: 15px;
+}
+
+.links-modal a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.links-modal-wishlist,
+.links-modal-purchase {
+  border-radius: 6px;
+  display: flex;
+  height: 47px;
+  justify-content: center;
+  width: 228px;
+}
+
+.links-modal-wishlist {
+  background-color: var(--green4);
+  gap: 8px;
+}
+.first-letter {
+  color: var(--green2);
+  font-weight: 800;
+  margin-right: 7px;
+}
+
+.game-info-modal {
+  color: var(--text-color);
+  height: 122px;
+  overflow: auto;
+  text-align: justify;
+}
+
+.game-info-modal p {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.game-info-modal p::selection {
+  background-color: var(--green4);
+}
+
+.links-modal {
+  display: flex;
+  gap: 24px;
+  margin-top: 15px;
+}
+
+.links-modal a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.links-modal-wishlist,
+.links-modal-purchase {
+  border-radius: 6px;
+  display: flex;
+  height: 47px;
+  justify-content: center;
+  width: 228px;
+}
+
+.links-modal-wishlist {
+  background-color: var(--green4);
+  gap: 8px;
+}
+
+.playstation-icon-modal {
+  height: 48px;
+}
+
+.heart-icon-modal {
+  align-self: center;
+  color: var(--white);
+}
+
+.links-modal-wishlist a {
+  align-self: center;
+  color: var(--white);
+}
+
+.links-modal-purchase {
+  border: 2px solid var(--green2);
+}
+
+.links-modal-purchase a {
+  align-self: center;
+  color: var(--green2);
+}
+
+.details-modal {
+  color: var(--text-color);
+  display: flex;
+  margin-top: 20px;
+}
+
+.right-column,
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.text-modal-title {
+  color: var(--title-modal);
+}
+
+.text-modal a {
+  color: inherit;
+  text-overflow: ellipsis;
+  overflow: clip;
+}
+
+.text-modal-sp {
+  inline-size: 221px;
+  max-height: 75px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.text-modal-sp u {
+  text-decoration: none;
+}
+
+.left-column {
+  margin-right: 45px;
+  width: 226px;
+}
+
+.images-modal {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 14px;
+}
+
+.images-modal-width {
+  max-width: 184px;
+}
+
+.video {
+  width: 384px;
+  height: 217px;
+}
+
+.loading-video {
+  display: flex;
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loading-video::after {
+  animation: loading 1s linear infinite;
+  border-radius: 50%;
+  border-top-color: var(--green3);
+  border: 5px solid var(--very-light-grey);
+  content: "";
+  height: 10px;
+  width: 10px;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.images-modal-one,
+.images-modal-two {
+  display: flex;
+  gap: 14px;
+}
+
+.details-icons-modal {
+  margin-top: auto;
+}
+.details-icons-modal img {
+  margin-right: 23px;
+}
+
+.icon-modal-switch {
+  filter: brightness(100);
+  height: 30px;
+  margin-bottom: 7px;
+  margin-left: 8px;
+}
+
+.modal-overlay {
+  background: #000000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.test {
+  background-color: red;
+  width: 400px;
+  height: 400px;
+  z-index: 1000;
+}
+
+.game-info-modal::-webkit-scrollbar {
+  width: 7px;
+  cursor:pointer;
+}
+
+.game-info-modal::-webkit-scrollbar-track {
+  background: #939393;
+}
+.game-info-modal::-webkit-scrollbar-thumb {
+  background-color: #36b972;
+}
+
+.text-modal-sp::-webkit-scrollbar {
+  width: 7px;
+  cursor: pointer;
+}
+
+.text-modal-sp::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.text-modal-sp::-webkit-scrollbar-thumb {
+  background-color: #4cc986;
+}
+
+.modal-background-none {
+  display: none;
+}

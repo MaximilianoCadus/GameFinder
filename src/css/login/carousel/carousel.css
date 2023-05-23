@@ -1,0 +1,23 @@
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login-background[data-image-index="0"] { background: url("../../../assets/images/background-images/joystick-xbox-one-white.jpg"); }
+.login-background[data-image-index="1"] { background: url("../../../assets/images/background-images/two-ps4-joysticks.jpg"); }
+.login-background[data-image-index="2"] { background: url("../../../assets/images/background-images/joystick-xbox-one-minecraft.jpg"); }
+.login-background[data-image-index="3"] { background: url("../../../assets/images/background-images/psp.jpg"); }
+.login-background[data-image-index="4"] { background: url("../../../assets/images/background-images/mario-mushroom.jpg"); }
+.login-background[data-image-index="5"] { background: url("../../../assets/images/background-images/gameboy-color.jpg"); }
+
+
+
+[data-theme="dark"] .login-background[data-image-index="0"] { background: url("../../../assets/images/background-images/joystick-ps4.jpeg"); }
+[data-theme="dark"] .login-background[data-image-index="1"] { background: url("../../../assets/images/background-images/joystick-switch.jpeg"); }
+[data-theme="dark"] .login-background[data-image-index="2"] { background: url("../../../assets/images/background-images/joystick-xbox-one.jpeg"); }
+[data-theme="dark"] .login-background[data-image-index="3"] { background: url("../../../assets/images/background-images/joystick-dreamcast.jpeg"); }
+[data-theme="dark"] .login-background[data-image-index="4"] { background: url("../../../assets/images/background-images/background-6-dark.jpg"); }
+[data-theme="dark"] .login-background[data-image-index="5"] { background: url("../../../assets/images/background-images/joystick-snes.jpeg"); }
+
